@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Greeting from './components/Greeting'
 import UserInfo from './components/UserInfo'
 
@@ -10,11 +11,13 @@ function App() {
     "Fold laundry",
     "Wash the floor",
   ];
+  const [result, setResult] = useState("");
   function getRandomTask() {
-    const randomTask = Math.floor(Math.random() * tasks.length);
-    console.log(randomTask);
-    const result = tasks[randomTask];
-    alert(result);
+    const random = Math.floor(Math.random() * tasks.length);
+    console.log(random);
+    const randomTask = tasks[random];
+    setResult(randomTask);
+
   }
   return (
     <div className="App">
@@ -23,6 +26,7 @@ function App() {
       <button onClick={getRandomTask}>
         Get Random Task
       </button>
+      <h3>{result}</h3>
     </div>
     
   );
