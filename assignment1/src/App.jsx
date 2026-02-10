@@ -1,10 +1,12 @@
-import Greeting from './components/Greeting'
+import Task1 from './components/Greeting'
+import UserInfo from './components/UserInfo'
 
 function App() {
   return (
     <div className="App">
-      <Greeting />
-
+      <Task1 />
+      <UserInfo />
+      
     </div>
   );
 }
