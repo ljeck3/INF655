@@ -31,19 +31,26 @@ function App() {
     {id: 1005, task: "Wash the floor"},
   ];
 
+  function handleAlert() {
+    alert("This is an alert");
+  }
+
   return (
     <div className="App">
-      <Greeting username={name1} />
-      <Greeting username={name2} />
+      <Greeting username={name1} /> {/*Assignment 2 - Task 1 */}
+      <Greeting username={name2} /> 
       <hr></hr>
-      <UserInfo />
+
+      <UserInfo handleClick={handleAlert} /> {/*Assignment 2 - Task 4 */}
       <hr></hr>
+
       <button onClick={getRandomTask}>
         Get Random Task
       </button>
       <h3>{result}</h3>
       <hr></hr>
-      {/*Counter Component*/}
+
+      {/*Assignment 2 - Task 2 */}
       <Counter />
       <h2>Tasks</h2>
       <ul>

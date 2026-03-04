@@ -3,7 +3,7 @@ function Greeting(props) {
 
   return (
     <div>
-      <h1>Hello, {props.username}</h1>
+      <h1>Hello, {props.username}</h1> {/*Assignment 2 - Task 1 */}
       <p style={{ color: "blue" }}>React is really cool!</p>
       <p>Today's date: {date.toDateString()}</p>
     </div>
