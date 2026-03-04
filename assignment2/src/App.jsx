@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Greeting from './components/Greeting'
 import UserInfo from './components/UserInfo'
 import Counter from './components/Counter'
+import TaskForm from './components/TaskForm'
 
 function App() {
   const name1 = "Marquis Nordyke"
@@ -50,12 +51,13 @@ function App() {
       <h3>{result}</h3>
       <hr></hr>
 
-      {/*Assignment 2 - Task 2 */}
-      <Counter />
+   
+      <Counter /> {/*Assignment 2 - Task 2 */}
       <h2>Tasks</h2>
       <ul>
         {tasks2.map((task) => <li key={task.id}>{ task.task }</li>)}
       </ul>
+      <TaskForm /> {/*Assignment 2 - Task 5 */}
     </div>
     
   );
